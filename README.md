@@ -1,6 +1,6 @@
 # JSON Diff Tool🛠️
 
-Welcome to JSONDiff! 🎉 This is a modern, React + Vite-based application that makes comparing two JSON data structures. This tool is designed to assist anyone who works with JSON data, providing a clear, intuitive, and ad-free interface for JSON comparison.
+Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes comparing two JSON data structures. This tool is designed to assist anyone who works with JSON data, providing a clear, intuitive, and ad-free interface for JSON comparison.
 
 ## Table of Contents
 
