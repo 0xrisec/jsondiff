@@ -1,0 +1,115 @@
+.diffcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.diff-status {
+    color: white;
+}
+
+.diff-status-container {
+    position: sticky;
+    top: 0;
+}
+
+.diff-checkbox {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 13px;
+    font-family: Inter, sans-serif;
+}
+
+.diff-checkbox label {
+    display: flex;
+    margin: 10px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.diff-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.diff-msg #buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.diff-msg #buttons button {
+    background: transparent;
+    border: 0px;
+    font-size: 20px;
+    color: #ff204e;
+    cursor: pointer;
+}
+
+.diff-msg #buttons span {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.msg {
+    border: thin solid lightgray;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    line-height: 18px;
+    font-family: Inter, sans-serif;
+    font-size: small;
+}
+
+.code-style {
+    background-color: #f5f5f5;
+    color: #FF204E;
+    font-family: monospace;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.arrow {
+    border: solid #FF204E;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#currentDiffIndex {
+    font-family: Inter, sans-serif;
+    font-size: small;
+}
+
+.green-checkbox {
+    accent-color: rgba(144, 238, 144, 1);
+}
+
+.red-checkbox {
+    accent-color: rgba(255, 99, 71, 1);
+}
+
+.blue-checkbox {
+    accent-color: rgba(173, 216, 230, 1);
+}
+
+.diff-viewer {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    /* grid-template-columns: 1fr; */
+    padding: 10px;
+    grid-gap: 10px;
+}

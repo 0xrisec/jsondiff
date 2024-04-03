@@ -1,0 +1,57 @@
+.diffcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.line-numbers {
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 14px;
+  background-color: #282c34;
+  color: #fff;
+  overflow: auto;
+  display: flex;
+}
+
+.line-number {
+  color: #b5b5b5;
+  display: inline-block;
+  width: 30px;
+  text-align: right;
+  user-select: none;
+  text-align: center;
+}
+
+.json-line {
+  white-space: pre; 
+  padding: 0 10px;
+}
+
+.json-container {
+  width: 100%;
+}
+
+.type {
+  background-color: rgba(255, 99, 71, 0.1);
+  color: rgba(255, 99, 71, 1);
+}
+
+.eq {
+  background-color: rgba(144, 238, 144, 0.1);
+  color: rgba(144, 238, 144, 1);
+}
+
+.missing {
+  background-color: rgba(173, 216, 230, 0.1);
+  color: rgba(173, 216, 230, 1);
+}
+
+.json-line.selected {
+  background-color: #e0e0e0;
+  color: #000;
+}

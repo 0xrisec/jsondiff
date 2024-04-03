@@ -1,0 +1,25 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.new-comparison {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF204E;
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-comparison:hover {
+    background-color: #ff4469;
+}
+
+.total-diff span {
+    color: #ff4469;
+}
