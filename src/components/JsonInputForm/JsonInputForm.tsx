@@ -68,7 +68,7 @@ export const JsonInputForm: React.FC<Props> = ({ onCompare, oldLeftJson, oldRigh
     if (leftValidationResult.isValid && rightValidationResult.isValid) {
       onCompare(leftJson, rightJson);
       setIsJsonDirty(false); 
-    } else {
+    } else if(leftJson?.length || rightJson?.length) {
       setIsJsonDirty(true);
     }
   };
@@ -77,7 +77,7 @@ export const JsonInputForm: React.FC<Props> = ({ onCompare, oldLeftJson, oldRigh
     let repairedLeftJson:string | undefined, repairedRightJson:string | undefined;
     let leftFixed = leftValidationResult.isValid, rightFixed = rightValidationResult.isValid;
   
-    if (!leftValidationResult.isValid) {
+    if (!leftFixed && leftJson?.length) {
       try {
         repairedLeftJson = jsonrepair(leftJson);
         leftFixed = true;
@@ -91,7 +91,7 @@ export const JsonInputForm: React.FC<Props> = ({ onCompare, oldLeftJson, oldRigh
       }
     }
   
-    if (!rightValidationResult.isValid) {
+    if (!rightFixed && rightJson?.length) {
       try {
         repairedRightJson = jsonrepair(rightJson);
         rightFixed = true;
@@ -103,7 +103,7 @@ export const JsonInputForm: React.FC<Props> = ({ onCompare, oldLeftJson, oldRigh
         setRightValidationResult({ isValid: true });
       }
     }
-    if (!leftFixed || !rightFixed) {
+    if ((!leftFixed || !rightFixed) && leftJson?.length && rightJson?.length) {
       alert("Unable to repair JSON. If you believe this JSON should be fixable, please report this issue on GitHub for further analysis");
     } else {
       setIsJsonDirty(false);
@@ -113,7 +113,7 @@ export const JsonInputForm: React.FC<Props> = ({ onCompare, oldLeftJson, oldRigh
     <>
       <div className="input-form-container">
         <div className="input-form-header">
-        {isJsonDirty && (
+        {isJsonDirty && leftJson?.length && rightJson?.length && (
           <div className="center">
             <button onClick={handleFixJson} className="fix-json">Fix JSON</button>
           </div>
