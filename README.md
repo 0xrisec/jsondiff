@@ -9,7 +9,7 @@ Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes
 - [Getting Started](#getting-started-)
 - [Security Overview](#security-overview-️)
 - [Installation](#installation-)
-- [Listening to You](#your-feedback-matters-️)
+- [Your Feedback Matters!](#your-feedback-matters-️)
 
 ## Why Choose this JSONDiff Tool Over Others? 🤔
 
