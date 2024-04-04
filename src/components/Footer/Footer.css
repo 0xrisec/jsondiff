@@ -23,17 +23,32 @@
     width: 100%;
 }
 
-.footer-text h1 {
+.footer-text h2 {
+    font-size: 32px;
     font-family: "General Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.footer-text .content span {
+.footer-text .footer-links a {
     padding: 0px 20px;
     font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-text .footer-links a:hover{
+    color: #FF204E;
 }
 
 .footer-logo {
     font-family: "General Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.footer-links { 
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {

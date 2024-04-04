@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.4",
     "jsonlint-mod": "^1.7.6",
     "next": "14.1.4",
     "react": "^18",
