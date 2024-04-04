@@ -17,15 +17,6 @@
     font-size: 14px;
 }
 
-.github-icon {
-    width: 25px;
-    height: auto;
-}
-
-.about {
-    width: 30px;
-    height: auto;
-}
 
 .diff {
     background: linear-gradient(270deg, rgba(105, 245, 255, 1) 0%, rgba(255, 32, 78, 1) 50%, rgba(131, 58, 180, 1) 100%);

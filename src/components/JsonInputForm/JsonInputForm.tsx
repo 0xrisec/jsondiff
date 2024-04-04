@@ -2,9 +2,9 @@
 import React, { ChangeEvent, useCallback, useState } from 'react';
 import JsonUtilityService from '../../service/JsonUtilityService';
 import './JsonInputForm.css'
-import leftSampleJson from '/public/assets/left-sample.json';
-import rightSampleJson from '/public/assets/right-sample.json';
-import { jsonrepair } from '/public/assets/lib/jsonrepair.js';
+import leftSampleJson from '../../../public/assets/left-sample.json';
+import rightSampleJson from '../../../public/assets/right-sample.json';
+import { jsonrepair } from '../../../public/assets/lib/jsonrepair';
 
 interface Props {
   onCompare: (leftJson: string, rightJson: string) => void;

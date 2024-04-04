@@ -1,6 +1,6 @@
 import Header from "@/components/Header/Header";
 import { Metadata } from "next";
-import Head from "next/head";
+import Image from "next/image";
 import styles from "./about.module.css";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function About() {
                         <ul className={styles["authors-list"]}>
                             <li className={styles["authors-list-item"]}>
                                 <div className={styles["author"]}>
-                                    <img alt="Author's Profile Picture" src="https://media.licdn.com/dms/image/D4E03AQGZHcbJEHDUag/profile-displayphoto-shrink_200_200/0/1710176839212?e=1717632000&v=beta&t=6hfWyA7YFxTRlKuu3sRGRI8o6OT5M3NXsxdHVZl1z0c" className="avatar avatar-48 photo" height="48" width="48" decoding="async" />
+                                    <Image alt="Author's Profile Picture" src="https://media.licdn.com/dms/image/D4E03AQGZHcbJEHDUag/profile-displayphoto-shrink_200_200/0/1710176839212?e=1717632000&v=beta&t=6hfWyA7YFxTRlKuu3sRGRI8o6OT5M3NXsxdHVZl1z0c" className="avatar avatar-48 photo" height={48} width={48} decoding="async" />
                                     <a className={styles["author-name"]} href="https://www.linkedin.com/in/vikas-kumawat-rootbabu/">Vikas Kumawat</a>
                                 </div>
                             </li>
@@ -49,17 +49,17 @@ export default function About() {
                 <div className={styles['content']}>
                     <p className={styles["paragraph"]}>
                         Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes comparing two JSON data structures. This tool is designed to assist anyone who works with JSON data, providing a clear, intuitive, and ad-free interface for JSON comparison.
-                        Whether you're a developer, a data analyst, or just someone who frequently works with JSON, you're going to love the simplicity and efficiency JSONDiff brings to your workflow. And the best part? It's completely ad-free!
+                        Whether you&apos;re a developer, a data analyst, or just someone who frequently works with JSON, you&apos;re going to love the simplicity and efficiency JSONDiff brings to your workflow. And the best part? It&apos;s completely ad-free!
                     </p>
                     <h3 className={styles["subtitle"]}>1. Why Choose this JSONDiff Tool Over Others? 🤔</h3>
                     <ul className={styles["unorder-list"]}>
                         <li>
                             <span className={styles["icon"]}>🚫</span>
-                            <strong className={styles["line-title"]}>Ad-Free Experience:</strong> Other tools often display intrusive Google ads that can detract from a professional environment, especially during screen-sharing sessions. While we understand the necessity of funding, our tool uses non-intrusive promotions that won't compromise your professional image. Most other tools do not offer an ad-free experience and those that do often fail to provide clear and informative JSON difference messages. The UI has been designed to be simple and focused on delivering meaningful difference messages, avoiding the distraction of Google ads.
+                            <strong className={styles["line-title"]}>Ad-Free Experience:</strong> Other tools often display intrusive Google ads that can detract from a professional environment, especially during screen-sharing sessions. While we understand the necessity of funding, our tool uses non-intrusive promotions that won&apos;t compromise your professional image. Most other tools do not offer an ad-free experience and those that do often fail to provide clear and informative JSON difference messages. The UI has been designed to be simple and focused on delivering meaningful difference messages, avoiding the distraction of Google ads.
                         </li>
                         <li>
                             <span className={styles["icon"]}>🧼</span>
-                            <strong className={styles["line-title"]}>Handles Dirty JSON:</strong> JSONDiff Tool not only compares but also offers options to clean and fix these JSON structures before comparison. Encountering modified, encoded, or "dirty" JSON is common during development. Most tools lack this feature to fix JSON, setting our tool apart.
+                            <strong className={styles["line-title"]}>Handles Dirty JSON:</strong> JSONDiff Tool not only compares but also offers options to clean and fix these JSON structures before comparison. Encountering modified, encoded, or &quot;dirty&quot; JSON is common during development. Most tools lack this feature to fix JSON, setting our tool apart.
                         </li>
                         <li>
                             <span className={styles["icon"]}>🔒</span>
@@ -89,10 +89,10 @@ export default function About() {
                             <strong className={styles["line-title"]}>B. Fix invalid JSON:</strong> 
                             <br />
                             <p>
-                                Ours doesn't just compare JSON, it also helps clean and fix it during comparison.
+                                Ours doesn&apos;t just compare JSON, it also helps clean and fix it during comparison.
                                 During development, JSON data can sometimes be messy or encoded, making it hard to work with.
-                                With JSONDiff Tool, you don't need to go elsewhere to clean it up.
-                                Just click "fix", and it'll sort out those special characters for you.
+                                With JSONDiff Tool, you don&apos;t need to go elsewhere to clean it up.
+                                Just click &quot;fix&quot;, and it&apos;ll sort out those special characters for you.
                             </p>
                             <details open={true} className={styles["video-container"]}>
                                 <summary className="video-summary">
@@ -102,20 +102,20 @@ export default function About() {
                                 <video className={styles["comparesion-video"]} src="/assets/videos/dirty-json-comparision.mp4" data-canonical-src="/assets/videos/compare.mp4" controls={true} muted={true}>
                                 </video>
                             </details>
-                            <p>Here's what the JSONdiff fix feature can do for you:</p>
+                            <p>Here&apos;s what the JSONdiff fix feature can do for you:</p>
                             <ul className={styles['invalid-json-item']}>
                                 <li><strong>Quotes Correction</strong>: Adds or fixes missing quotes around keys.</li>
                                 <li><strong>Escape Characters</strong>: Adds or corrects missing escape characters.</li>
                                 <li><strong>Comma Handling</strong>: Fixes missing commas and cleans trailing commas.</li>
                                 <li><strong>Bracket Closure</strong>: Adds or fixes missing closing brackets.</li>
-                                <li><strong>Quote Standardization</strong>: Replaces special quote characters (e.g.,<code>"..."</code>) with standard double quotes.</li>
+                                <li><strong>Quote Standardization</strong>: Replaces special quote characters (e.g.,<code>&quot;...&quot;</code>) with standard double quotes.</li>
                                 <li><strong>Whitespace Normalization</strong>: Replaces special whitespace characters with regular spaces.</li>
                                 <li><strong>Boolean and Null Values</strong>: Converts Python constants (None, True, False) to their JSON equivalents (null, true, false).</li>
                                 <li><strong>Comment Removal</strong>: Removes comments, including both block <code>(/* ... */)</code> and line <code>(// ...)</code> comments.</li>
                                 <li><strong>JSONP Notation Cleaning</strong>: Cleans JSONP notation (e.g., <code>callback({"{...}"})</code>).</li>
                                 <li><strong>Escaped String Cleaning</strong>: Removes unnecessary escape characters from already escaped strings (e.g., {'{\\"stringified\\": \\"content\\"}'}).</li>
-                                <li><strong>MongoDB Data Type Conversion</strong>: Converts MongoDB data types <code>(e.g., NumberLong(2), ISODate("2022-03-03T05:02:11.111Z"))</code> to standard JSON formats.</li>
-                                <li><strong>String Concatenation</strong>: Concatenates split strings (e.g., "longer text" + "more text on next line").</li>
+                                <li><strong>MongoDB Data Type Conversion</strong>: Converts MongoDB data types <code>(e.g., NumberLong(2), ISODate(&quot;2022-03-03T05:02:11.111Z&quot;))</code> to standard JSON formats.</li>
+                                <li><strong>String Concatenation</strong>: Concatenates split strings (e.g., &quot;longer text&quot; + &quot;more text on next line&quot;).</li>
                             </ul>
                             <p>By addressing these issues, the fix feature ensures your JSON data is syntactically correct and ready for use in your applications.</p>
                         </li>
@@ -125,7 +125,7 @@ export default function About() {
                             <br />
                             <p>
                             JSON might seem simple, but even a tiny mistake can mess it up. 
-                            Our tool's validator checks your JSON data to make sure it follows all the rules. 
+                            Our tool&apos;s validator checks your JSON data to make sure it follows all the rules. 
                             It ensures your JSON is formatted right and structured properly, so you can trust it to work smoothly.
                             </p>
                         </li>
