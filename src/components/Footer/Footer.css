@@ -56,4 +56,26 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .footer-text  h2 {
+        flex-direction: column;
+        display: none;
+    }
+
+    .footer-text nav {
+        width: 100%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .footer-links li {
+        padding: 10px;
+    }
+
+    .footer-text .footer-links a {
+        padding: 0px !important;
+    }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   color: #fff;
-  padding: 15px 15px 10px 10px;
+  padding: 10px;
   border-radius: 8px;
 }
 
@@ -23,11 +23,15 @@ textarea {
   border: 1px solid #ff4444;
 }
 
-.left-area,
-.right-area {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+
+
+@media screen and (min-width: 770px) {
+  .left-area,
+  .right-area {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .compare, .fix-json {
