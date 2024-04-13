@@ -3,7 +3,13 @@
    <url>
       <loc>https://www.jsondiff.in/</loc>
       <lastmod>2024-04-01</lastmod>
-      <changefreq>monthly</changefreq>
+      <changefreq>yearly</changefreq>
       <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>https://www.jsondiff.in/about</loc>
+      <lastmod>2024-04-13</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
    </url>
 </urlset>
