@@ -85,7 +85,7 @@ const Dashboard: React.FC = () => {
               </label>
             ))}
           </div> */}
-            <div className='d-flex'>
+            <div className='d-flex result-container'>
               {diffs?.length > 0 ? (<div className='total-diff'>
                 <label>Comparison Result:&nbsp;</label><span>{`${diffs.length} differences identified.`}</span>
               </div>) : (<div className='total-diff'>

@@ -23,3 +23,15 @@
 .total-diff span {
     color: #ff4469;
 }
+
+
+
+@media screen and (max-width: 760px) {
+    .total-diff {
+        position: relative;
+    }
+
+    .result-container {
+        flex-direction: column-reverse;
+    }
+}

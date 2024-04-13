@@ -111,3 +111,21 @@
     padding: 10px;
     grid-gap: 10px;
 }
+
+@media screen and (max-width: 760px) {
+
+    .diff-viewer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .diffcontainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        margin-bottom: 30px;
+    }
+}

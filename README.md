@@ -4,12 +4,17 @@ Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes
 
 ## Table of Contents
 
-- [Why Choose this JSONDiff Tool Over Others?](#why-choose-this-jsondiff-tool-over-others-)
-- [Features](#features-)
-- [Getting Started](#getting-started-)
-- [Security Overview](#security-overview-️)
-- [Installation](#installation-)
-- [Your Feedback Matters!](#your-feedback-matters-️)
+- [JSON Diff Tool🛠️](#json-diff-tool️)
+  - [Table of Contents](#table-of-contents)
+  - [Why Choose this JSONDiff Tool Over Others? 🤔](#why-choose-this-jsondiff-tool-over-others-)
+  - [Features 🌟](#features-)
+  - [Getting Started 🙏](#getting-started-)
+    - [How to Compare JSON](#how-to-compare-json)
+    - [Working with Dirty JSON](#working-with-dirty-json)
+  - [Installation 💻](#installation-)
+    - [Learn More](#learn-more)
+  - [Security 🛡️](#security-️)
+  - [Your Feedback Matters! ❤️](#your-feedback-matters-️)
 
 ## Why Choose this JSONDiff Tool Over Others? 🤔
 
@@ -88,25 +93,15 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Security Overview 🛡️
+## Security 🛡️
 
-Our tool conducts all comparisons in your browser. You can confirm this by observing the Network tab in your browser's developer tools during a comparison operation. No new network requests will be made, indicating your data remains private.
+Our tool conducts all comparisons in your browser. You can confirm this by observing the Network tab in your browser's developer tools during a comparison operation. No new network requests will be made during the comparison, indicating your data remains private. It just made two XHR calls which useful calls are integral to the dynamic rendering and functionality of a Next.js application, fetching necessary code chunks, page-specific data, and metadata for SEO. 
 
-### JSONDiff Startup Files
+Our tool performs all comparisons directly within your browser, ensuring your data's privacy. This can be verified by monitoring the Network tab in your browser's developer tools while a comparison is in progress.  Initially, it initiates two essential calls, which are crucial for the dynamic rendering and functionality of a Next.js application. These calls retrieve necessary code chunks, page-specific data, and metadata for SEO optimization.
 
-JSONDiff only loads following files on startup and never loads any additional files afterwards.
+![Screenshot 2024-04-13 125951](https://github.com/0xrisec/jsondiff/assets/42447141/632addb8-7aba-44e0-92f9-abf051536979)
 
-![network](https://github.com/ROOTBABU/jsondiff/assets/42447141/49f70994-0826-4db2-b1a5-4f44685f28f5)
-
-| File Name | Description |
-|---|---|
-| jsondiff.in | Main HTML content of the application. |
-| js?id=G-LQ7QXW3VKP | Script for managing website tags (GTM) for website usage insights for GA4. |
-| index-DJj96Bnc.js | JavaScript file used by the application for JSON comparison, fixing, and formatting. |
-| index-P7C-JsNh.css | CSS file for styling the application. |
-| data:image/svg+xml,... | SVG image used by the application. |
-| favicon-CuzFQPcm.png | PNG image used by the application. |
-| collect?v=2&tid=G-LQ7QXW3VKP&gtm=45... | Request to analytics service for website usage insights (GA4). |
+Throughout the comparison process, you will observe that no additional network requests are made, ensuring that your data remains private.
 
 ## Your Feedback Matters! ❤️
 
