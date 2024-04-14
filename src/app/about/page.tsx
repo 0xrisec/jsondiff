@@ -34,8 +34,8 @@ export default function About() {
                         <ul className={styles["authors-list"]}>
                             <li className={styles["authors-list-item"]}>
                                 <div className={styles["author"]}>
-                                    <Image alt="Author's Profile Picture" src="https://media.licdn.com/dms/image/D4E03AQGZHcbJEHDUag/profile-displayphoto-shrink_200_200/0/1710176839212?e=1717632000&v=beta&t=6hfWyA7YFxTRlKuu3sRGRI8o6OT5M3NXsxdHVZl1z0c" className="avatar avatar-48 photo" height={48} width={48} decoding="async" />
-                                    <a className={styles["author-name"]} href="https://www.linkedin.com/in/vikas-kumawat-rootbabu/">Vikas Kumawat</a>
+                                    <Image alt="Author's Profile Picture" src="/assets/images/profile.jpg" className="avatar avatar-48 photo" height={48} width={48} decoding="async" />
+                                    <a className={styles["author-name"]} href="https://www.linkedin.com/in/0xrisec/">Vikas Kumawat</a>
                                 </div>
                             </li>
                         </ul>
