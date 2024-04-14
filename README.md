@@ -95,8 +95,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Security 🛡️
 
-Our tool conducts all comparisons in your browser. You can confirm this by observing the Network tab in your browser's developer tools during a comparison operation. No new network requests will be made during the comparison, indicating your data remains private. It just made two XHR calls which useful calls are integral to the dynamic rendering and functionality of a Next.js application, fetching necessary code chunks, page-specific data, and metadata for SEO. 
-
 Our tool performs all comparisons directly within your browser, ensuring your data's privacy. This can be verified by monitoring the Network tab in your browser's developer tools while a comparison is in progress.  Initially, it initiates two essential calls, which are crucial for the dynamic rendering and functionality of a Next.js application. These calls retrieve necessary code chunks, page-specific data, and metadata for SEO optimization.
 
 ![Screenshot 2024-04-13 125951](https://github.com/0xrisec/jsondiff/assets/42447141/632addb8-7aba-44e0-92f9-abf051536979)
