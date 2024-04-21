@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: 'JSON Diff - Validate, Format, and Compare JSON',
   description: 'Validate, format, and compare JSON data with JSON Diff.',
-  authors: [{ name: "rootbabu", url: "https://www.linkedin.com/in/vikas-kumawat-rootbabu/" }],
+  authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
   applicationName: 'jsondiff',
   generator: 'jsondiff',
   keywords: "json diff, semantic json compare tool, json comparison tool, Format JSON, Compare JSON documents, Securely Compare JSON, JSON comparison",
