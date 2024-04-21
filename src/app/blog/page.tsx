@@ -4,12 +4,12 @@ import Header from '@/components/Header/Header';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'JSON Diff - Validate, Format, and Compare JSON',
-  description: 'Validate, format, and compare JSON data with JSON Diff.',
+  title: 'JSON Diff | Blogs',
+  description: 'List of blogs that cover all about JSON',
   authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
   applicationName: 'jsondiff',
   generator: 'jsondiff',
-  keywords: "json diff, semantic json compare tool, json comparison tool, Format JSON, Compare JSON documents, Securely Compare JSON, JSON comparison",
+  keywords: "json diff, json blogs, semantic json compare tool, json comparison tool, Format JSON, Compare JSON documents, Securely Compare JSON, JSON comparison",
   robots: "json diff, json comparison",
   openGraph: {
     type: "website",
