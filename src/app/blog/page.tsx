@@ -1,5 +1,5 @@
 import styles from './blog.module.css';
-import posts from '../../../public/json/posts.json'; // Adjust the path based on your project structure
+import posts from '../../../public/json/posts.json';
 import Header from '@/components/Header/Header';
 import { Metadata } from "next";
 
@@ -54,7 +54,7 @@ const BlogList = ({ posts }: { posts: Post[] }) => {
     return (
         <ul className={styles.blogList}>
             {posts?.map((post) => (
-                <li className="py-12 border-b border-rose-500">
+                <li key={post.id} className="py-12 border-b border-rose-500">
                     <article>
                         <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                             <dl>

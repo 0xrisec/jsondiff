@@ -1,4 +1,3 @@
-import Header from "@/components/Header/Header";
 import Image from "next/image";
 import { Metadata } from "next";
 
@@ -166,7 +165,7 @@ const DynamicBlogComponent = () => {
                                 <p className="mb-5 text-gray-300 font-sans">In the realm of programming and web development, JSON (JavaScript Object Notation) plays a crucial role as a lightweight data interchange format. It has become ubiquitous across various platforms and is a fundamental part of modern web technologies.</p>
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="what-does-json-stand-for">What does JSON stand for?</h2>
-                                <p className="mb-5 text-gray-300 font-sans">JSON stands for JavaScript Object Notation. It's a text-based data format derived from JavaScript, but it's language-independent, meaning it's used with any programming language capable of parsing JSON.</p>
+                                <p className="mb-5 text-gray-300 font-sans">JSON stands for JavaScript Object Notation. It&apos;s a text-based data format derived from JavaScript, but it&apos;s language-independent, meaning it&apos;s used with any programming language capable of parsing JSON.</p>
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="history-and-background">History and Background</h2>
                                 <h3 className="text-white font-semibold text-xl mt-6 mb-3 leading-normal font-sans" id="origins-of-json">Origins of JSON</h3>
@@ -175,10 +174,10 @@ const DynamicBlogComponent = () => {
                                 <p className="mb-5 text-gray-300 font-sans">Since its introduction, JSON has gained widespread acceptance and is now a standard for data interchange in web development and beyond.</p>
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="json-syntax">JSON Syntax</h2>
-                                <p className="mb-5 text-gray-300 font-sans">JSON follows a straightforward syntax that's easy to read and write.</p>
+                                <p className="mb-5 text-gray-300 font-sans">JSON follows a straightforward syntax that&apos;s easy to read and write.</p>
 
                                 <h3 className="text-white font-semibold text-xl mt-6 mb-3 leading-normal font-sans" id="basic-structure">Basic Structure</h3>
-                                <p className="mb-5 text-gray-300 font-sans">JSON data is organized into key-value pairs. Each key is a string, and the value can be a string, number, boolean, array, or object. Here's a simple example:</p>
+                                <p className="mb-5 text-gray-300 font-sans">JSON data is organized into key-value pairs. Each key is a string, and the value can be a string, number, boolean, array, or object. Here&apos;s a simple example:</p>
                                 <pre className="bg-gray-800 text-white p-4 overflow-x-auto rounded-lg">
                                     <code id="jsonCode">
                                         {JSON.stringify({
@@ -225,7 +224,7 @@ const DynamicBlogComponent = () => {
                                 </pre>
                                 <h3 className="text-white font-semibold text-xl mt-6 mb-3 leading-normal font-sans" id="arrays-and-objects">Arrays and Objects</h3>
                                 <p className="mb-5 text-gray-300 font-sans">JSON allows for the nesting of arrays and objects, enabling the representation of complex data structures.</p>
-                                <p className="mb-5 text-gray-300 font-sans">Arrays in JSON are ordered lists of values, which can be strings, numbers, objects, arrays, etc. Here's an example of an array containing objects:</p>
+                                <p className="mb-5 text-gray-300 font-sans">Arrays in JSON are ordered lists of values, which can be strings, numbers, objects, arrays, etc. Here&apos;s an example of an array containing objects:</p>
                                 <pre className="bg-gray-800 text-white p-4 overflow-x-auto rounded-lg">
                                     <code id="jsonCode">
                                         {JSON.stringify({
@@ -237,7 +236,7 @@ const DynamicBlogComponent = () => {
                                         }, null, 2)}
                                     </code>
                                 </pre>
-                                <p className="mb-5 text-gray-300 font-sans">Objects in JSON are collections of key-value pairs, allowing for nested structures. Here's an example of an object containing other objects and arrays:</p>
+                                <p className="mb-5 text-gray-300 font-sans">Objects in JSON are collections of key-value pairs, allowing for nested structures. Here&apos;s an example of an object containing other objects and arrays:</p>
                                 <pre className="bg-gray-800 text-white p-4 overflow-x-auto rounded-lg">
                                     <code id="jsonCode">
                                         {JSON.stringify({
@@ -268,7 +267,7 @@ const DynamicBlogComponent = () => {
                                 <p className="mb-5 text-gray-300 font-sans">Compared to other data interchange formats like XML, JSON is lightweight and results in smaller file sizes, making it efficient for data transmission over networks.</p>
 
                                 <h3 className="text-white font-semibold text-xl mt-6 mb-3 leading-normal font-sans" id="easy-to-understand-and-use">Easy to Understand and Use</h3>
-                                <p className="mb-5 text-gray-300 font-sans">JSON's simple syntax and flexibility make it easy for developers to understand and use, even for those new to programming.</p>
+                                <p className="mb-5 text-gray-300 font-sans">JSON&apos;s simple syntax and flexibility make it easy for developers to understand and use, even for those new to programming.</p>
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="common-use-cases">Common Use Cases</h2>
                                 <h3 className="text-white font-semibold text-xl mt-6 mb-3 leading-normal font-sans" id="web-development">Web Development</h3>
@@ -375,7 +374,7 @@ const DynamicBlogComponent = () => {
                                     </li>
                                     <li className="list-decimal mb-5 mt-5">
                                         <b>Is JSON only used for web development?</b>
-                                        <p className="mt-3 mb-5 text-gray-300 font-sans">While JSON is commonly used in web development, it's also used in other contexts, such as mobile app development, IoT (Internet of Things) applications, and data exchange between different software systems.</p>
+                                        <p className="mt-3 mb-5 text-gray-300 font-sans">While JSON is commonly used in web development, it&apos;s also used in other contexts, such as mobile app development, IoT (Internet of Things) applications, and data exchange between different software systems.</p>
                                     </li>
                                     <li className="list-decimal mb-5 mt-5">
                                         <b>Can JSON handle complex data structures?</b>
