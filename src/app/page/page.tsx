@@ -1,8 +1,14 @@
-import Dashboard from "@/components/Dashboard/Dashboard";
-import { Metadata } from "next";
-import styles from "./page.module.css";
+"use client"
 
-export const metadata: Metadata = {
+import { useSearchParams } from "next/navigation";
+
+import dynamic from 'next/dynamic';
+import React, { ReactElement, ComponentType } from 'react';
+import Header from "@/components/Header/Header";
+
+import { Metadata } from "next";
+
+const metadata: Metadata = {
   title: 'JSON Diff - Validate, Format, and Compare JSON',
   description: 'Validate, format, and compare JSON data with JSON Diff.',
   authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
@@ -22,10 +28,22 @@ export const metadata: Metadata = {
   }
 };
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <Dashboard />
-    </main>
-  );
+interface ComponentMap {
+    [key: string]: ComponentType<any>; 
 }
+
+const componentMap: ComponentMap = {
+    '1': dynamic(() => import('../../components/blog/one'))
+};
+
+const BlogPost = (): ReactElement => {
+    const id = useSearchParams().get('id');
+    const blogId: string = Array.isArray(id) ? id[0] : id || '';
+    const SelectedComponent: ComponentType<any> = componentMap[blogId] || (() => <p>Blog not found</p>);
+    return <>
+        <Header />
+        <SelectedComponent />;
+    </>
+};
+
+export default BlogPost;

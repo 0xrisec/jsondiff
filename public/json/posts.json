@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "title": "What does JSON stand for?",
+        "date": "2024-04-20",
+        "url": "/page?id=1",
+        "excerpt": "In the realm of programming and web development, JSON (JavaScript Object Notation) plays a crucial role as a lightweight data interchange format. It has become ubiquitous across various platforms and is a fundamental part of modern web technologies."
+    }
+]

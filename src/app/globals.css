@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.marker:text-slate-200 li::marker {
+  color: theme('colors.slate.200');
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

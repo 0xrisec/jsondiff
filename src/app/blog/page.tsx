@@ -1,5 +1,27 @@
 import styles from './blog.module.css';
 import posts from '../../../public/json/posts.json'; // Adjust the path based on your project structure
+import Header from '@/components/Header/Header';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'JSON Diff - Validate, Format, and Compare JSON',
+  description: 'Validate, format, and compare JSON data with JSON Diff.',
+  authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
+  applicationName: 'jsondiff',
+  generator: 'jsondiff',
+  keywords: "json diff, semantic json compare tool, json comparison tool, Format JSON, Compare JSON documents, Securely Compare JSON, JSON comparison",
+  robots: "json diff, json comparison",
+  openGraph: {
+    type: "website",
+    url: "https://jsondiff.in/",
+    title: "JSON Diff - Validate, Format, and Compare JSON",
+    description: "Validate, format, and compare JSON data with JSON Diff.",
+    siteName: "jsondiff",
+    images: [{
+      url: "https://jsondiff.in/assets/images/jsondiff.png",
+    }],
+  }
+};
 
 type Post = {
     id: number;
@@ -15,13 +37,16 @@ type Post = {
 
 const Blog = () => {
     return (
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+        <>
+        <Header />
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 pt-5">
             <div className="border-b border-rose-500 space-y-2 pb-8 pt-6 md:space-y-5">
                 <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">Blog Posts</h1>
                 <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">List of blogs that cover all about JSON</p>
             </div>
             <BlogList posts={posts as Post[]} />
         </div>
+        </>
     );
 };
 

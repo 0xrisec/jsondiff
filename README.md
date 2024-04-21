@@ -70,7 +70,7 @@ To get started with JSONDiff on your local machine, follow these simple installa
 
 ```bash
 # Clone the repository
-git clone https://github.com/ROOTBABU/jsondiff.git
+git clone https://github.com/0xrisec/jsondiff.git
 
 # Navigate to the project directory
 cd jsondiff
