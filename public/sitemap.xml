@@ -24,4 +24,10 @@
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
+   <url>
+      <loc>https://www.jsondiff.in/blog/how-to-display-json-data-in-html</loc>
+      <lastmod>2024-04-25</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+   </url>
 </urlset>
