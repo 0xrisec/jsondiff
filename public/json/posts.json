@@ -28,5 +28,37 @@
             }
         },
         "excerpt": "In the realm of programming and web development, JSON (JavaScript Object Notation) plays a crucial role as a lightweight data interchange format. It has become ubiquitous across various platforms and is a fundamental part of modern web technologies."
-    }
+    },
+    {
+      "two": 2,
+      "title": "How to Display JSON Data in HTML: A Comprehensive Guide",
+      "date": "2024-04-25",
+      "url": "/blog/how-to-display-json-data-in-html",
+      "slug": {
+          "name": "how-to-display-json-data-in-html",
+          "path": "../../../components/blog/two"
+      },
+      "metadata": {
+        "title": "JSON Diff | How to Display JSON Data in HTML: A Comprehensive Guide",
+        "description": "Explore the step-by-step guide on integrating JSON data into HTML for dynamic web experiences. Learn best practices and techniques for effective JSON data display.",
+        "authors": [{ "name": "0xrisec", "url": "https://www.linkedin.com/in/0xrisec/" }],
+        "applicationName": "jsondiff",
+        "generator": "jsondiff",
+        "keywords": "Display JSON in HTML, JSON Data Display, JSON HTML Integration, Dynamic Web Content, JSON for Web Developers, JSON Guide, JSON Tutorial, Web Development Techniques",
+        "robots": "index, follow",
+        "openGraph": {
+          "type": "article",
+          "url": "https://jsondiff.in/display-json-in-html",
+          "title": "How to Display JSON Data in HTML: A Comprehensive Guide",
+          "description": "Explore the step-by-step guide on integrating JSON data into HTML for dynamic web experiences. Learn best practices and techniques for effective JSON data display.",
+          "siteName": "jsondiff",
+          "images": [
+            {
+              "url": "https://jsondiff.in/_next/image?url=%2Fassets%2Fimages%2Fblogs%2Fdisplay-json-in-html.png&w=640&q=75"
+            }
+          ]
+        }
+      },
+      "excerpt": "In today's digital landscape, harnessing the power of data is paramount for web developers and designers alike. JSON (JavaScript Object Notation) has emerged as a popular format for structuring data due to its simplicity and versatility."
+  }
 ]

@@ -10,7 +10,8 @@ interface ComponentMap {
 }
 
 const componentMap: ComponentMap = {
-    'what-does-json-stand-for': dynamic(() => import('../../../components/blog/one'))
+    'what-does-json-stand-for': dynamic(() => import('../../../components/blog/one')),
+    'how-to-display-json-data-in-html': dynamic(() => import('../../../components/blog/two'))
 };
   
 
