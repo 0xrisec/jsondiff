@@ -161,7 +161,7 @@ const Two = () => {
                                 <p className="mb-5 text-gray-300 font-sans">For JSON data with nested structures, such as objects within objects or arrays of objects, you may need to iterate through the data to display it dynamically.</p>
 
                                 <CopyBlock
-                                    text={simpleData}
+                                    text={nestedData}
                                     language="javascript"
                                     theme={dracula}
                                 />
