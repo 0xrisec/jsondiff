@@ -103,10 +103,10 @@ const Two = () => {
                         <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
                             <div className="prose max-w-none pb-8 dark:prose-invert">
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="introduction">Introduction</h2>
-                                <p className="mb-5 text-gray-300 font-sans">In today's digital landscape, harnessing the power of data is paramount for web developers and designers alike. JSON (JavaScript Object Notation) has emerged as a popular format for structuring data due to its simplicity and versatility. Integrating JSON data into HTML allows for dynamic and interactive web experiences. In this guide, we will delve into the intricacies of displaying JSON data in HTML, providing you with step-by-step instructions and best practices.</p>
+                                <p className="mb-5 text-gray-300 font-sans">In today&apos;s digital landscape, harnessing the power of data is paramount for web developers and designers alike. JSON (JavaScript Object Notation) has emerged as a popular format for structuring data due to its simplicity and versatility. Integrating JSON data into HTML allows for dynamic and interactive web experiences. In this guide, we will delve into the intricacies of displaying JSON data in HTML, providing you with step-by-step instructions and best practices.</p>
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="understanding-json">Understanding JSON and Its Structure</h2>
-                                <p className="mb-5 text-gray-300 font-sans">Before diving into the process of displaying JSON data in HTML, it's crucial to grasp the fundamentals of JSON and its structure. JSON is a lightweight data interchange format that is easy for humans to read and write and for machines to parse and generate. It consists of key-value pairs and arrays, making it an ideal choice for transmitting data between a server and a web application.</p>
+                                <p className="mb-5 text-gray-300 font-sans">Before diving into the process of displaying JSON data in HTML, it&apos;s crucial to grasp the fundamentals of JSON and its structure. JSON is a lightweight data interchange format that is easy for humans to read and write and for machines to parse and generate. It consists of key-value pairs and arrays, making it an ideal choice for transmitting data between a server and a web application.</p>
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="table-of-contents">Key Concepts of JSON:</h2>
                                 <ol className="leading-7 pl-6 mt-5 mb-5 text-gray-300">
@@ -125,10 +125,10 @@ const Two = () => {
                                 </ol>
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="accessing-json-data">Accessing JSON Data</h2>
-                                <p className="mb-5 text-gray-300 font-sans">Once you have a clear understanding of JSON's structure, the next step is to access and manipulate JSON data within your HTML document. JavaScript, being the language of the web, provides powerful tools for interacting with JSON data.</p>
+                                <p className="mb-5 text-gray-300 font-sans">Once you have a clear understanding of JSON&apos;s structure, the next step is to access and manipulate JSON data within your HTML document. JavaScript, being the language of the web, provides powerful tools for interacting with JSON data.</p>
 
                                 <h3 className="text-white font-semibold text-xl mt-6 mb-3 leading-normal font-sans" id="using-javascript-to-access-json-data">Using JavaScript to Access JSON Data</h3>
-                                <p className="mb-5 text-gray-300 font-sans">To access JSON data in HTML, you can use JavaScript's built-in fetch API to retrieve JSON from a remote server or define JSON directly within your script.</p>
+                                <p className="mb-5 text-gray-300 font-sans">To access JSON data in HTML, you can use JavaScript&apos;s built-in fetch API to retrieve JSON from a remote server or define JSON directly within your script.</p>
 
                                 <CopyBlock
                                     text={languageDemo}
@@ -145,7 +145,7 @@ const Two = () => {
                                 />
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="rendering-json-data">Rendering JSON Data in HTML</h2>
-                                <p className="mb-5 text-gray-300 font-sans">Once you've retrieved or defined your JSON data, the next step is to render it within your HTML document. There are several approaches to achieve this, depending on the complexity of your data and the desired outcome.</p>
+                                <p className="mb-5 text-gray-300 font-sans">Once you&apos;ve retrieved or defined your JSON data, the next step is to render it within your HTML document. There are several approaches to achieve this, depending on the complexity of your data and the desired outcome.</p>
 
                                 <h3 className="text-white text-xl font-bold font-sans mb-4" id="simple-data-display">Simple Data Display</h3>
                                 <p className="mb-5 text-gray-300 font-sans">For simple JSON structures consisting of key-value pairs, you can directly insert the data into HTML elements using JavaScript.</p>
@@ -167,7 +167,7 @@ const Two = () => {
                                 />
 
                                 <h2 className="text-white text-2xl font-bold font-sans mb-6 mt-12" id="best-practices">Best Practices for Displaying JSON Data in HTML</h2>
-                                <p className="mb-5 text-gray-300 font-sans">While displaying JSON data in HTML, it's essential to adhere to best practices to ensure readability, accessibility, and maintainability of your code.</p>
+                                <p className="mb-5 text-gray-300 font-sans">While displaying JSON data in HTML, it&apos;s essential to adhere to best practices to ensure readability, accessibility, and maintainability of your code.</p>
 
                                 <h3 className="text-white text-xl font-bold font-sans mb-4">1. Maintain Separation of Concerns</h3>
                                 <p className="mb-5 text-gray-300 font-sans">Keep your JavaScript logic separate from your HTML markup by using external JavaScript files or defining scripts at the end of your HTML document. This separation enhances code organization and readability.</p>
