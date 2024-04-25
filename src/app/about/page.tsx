@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./about.module.css";
 
 export const metadata: Metadata = {
-    title: 'JSON Diff - Validate, Format, and Compare JSON',
+    title: 'JSON Diff | About',
     description: 'Validate, format, and compare JSON data with JSON Diff.',
     authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
     applicationName: 'jsondiff',

@@ -3,7 +3,30 @@
         "id": 1,
         "title": "What does JSON stand for?",
         "date": "2024-04-20",
-        "url": "/page?id=1",
+        "url": "/blog/what-does-json-stand-for",
+        "slug": {
+            "name": "what-does-json-stand-for",
+            "path": "../../../components/blog/one"
+        },
+        "metadata": {
+            "title": "JSON Diff | What does JSON stand for?",
+            "description": "Uncover the full meaning of JSON and its significance in modern web development. Learn how JSON revolutionizes data interchange.",
+            "authors": [{ "name": "0xrisec", "url": "https://www.linkedin.com/in/0xrisec/" }],
+            "applicationName": "jsondiff",
+            "generator": "jsondiff",
+            "keywords": "What is JSON, JSON Meaning, JSON Definition, JSON in Web Development, JSON Tutorial, Learn JSON, JSON Basics, JSON for Beginners, Data Interchange Format, JSON Guide",
+            "robots": "json diff, json comparison",
+            "openGraph": {
+              "type": "website",
+              "url": "https://jsondiff.in/",
+              "title": "JSON Diff | What does JSON stand for?",
+              "description": "Uncover the full meaning of JSON and its significance in modern web development. Learn how JSON revolutionizes data interchange.",
+              "siteName": "jsondiff",
+              "images": [{
+                "url": "https://jsondiff.in/_next/image?url=%2Fassets%2Fimages%2Fblogs%2Fwhat-does-json-stand-for.png&w=640&q=75"
+              }]
+            }
+        },
         "excerpt": "In the realm of programming and web development, JSON (JavaScript Object Notation) plays a crucial role as a lightweight data interchange format. It has become ubiquitous across various platforms and is a fundamental part of modern web technologies."
     }
 ]

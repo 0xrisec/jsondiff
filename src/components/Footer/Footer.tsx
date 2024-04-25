@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import Link from 'next/link'; 
-import './Footer.css'; 
+import Link from 'next/link';
+import './Footer.css';
 
 const Footer: React.FC = () => {
   return (
@@ -37,6 +37,10 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
             </ul>
+            <div className="mt-5">
+              <p className='px-4'>Compare JSON data efficiently with our tool. Discover precise differences beyond mere line changes and shuffled properties.</p>
+              <p className='px-4'>Developed by <a href="https://www.linkedin.com/in/0xrisec/" target="_blank" className='text-[#ff4469]'>0xrisec</a></p>
+            </div>
           </nav>
         </div>
       </div>

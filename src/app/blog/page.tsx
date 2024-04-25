@@ -27,15 +27,15 @@ type Post = {
     id: number;
     title: string;
     date: string;
-    tags: {
+    url: string;
+    excerpt: string;
+    tags?: {
         title: string,
         link: string
     }[];
-    url: string;
-    excerpt: string;
 };
 
-const Blog = () => {
+const Blog = ({params}: {params: { slug: string }}) => {
     return (
         <>
         <Header />

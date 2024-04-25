@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: 'JSON Diff - Validate, Format, and Compare JSON',
+  title: 'JSON Diff | JSON Compare tool',
   description: 'Validate, format, and compare JSON data with JSON Diff.',
   authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
   applicationName: 'jsondiff',

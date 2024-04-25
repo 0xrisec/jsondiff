@@ -1,25 +1,4 @@
 import Image from "next/image";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: 'Understanding JSON: A Comprehensive Guide',
-    description: 'Dive deep into the world of JSON, exploring its history, syntax, advantages, and practical applications in web development and beyond.',
-    authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
-    applicationName: 'jsondiff',
-    generator: 'jsondiff',
-    keywords: "JSON, JavaScript Object Notation, web development, data interchange format, JSON vs XML, parsing JSON, JSON syntax, JSON advantages",
-    robots: "index, follow",
-    openGraph: {
-        type: "article",
-        url: "https://jsondiff.in/",
-        title: "Understanding JSON: A Comprehensive Guide",
-        description: "Explore the essentials of JSON, including its syntax, advantages, and how it compares to XML. Learn through examples how JSON is used in web development, APIs, and data storage.",
-        siteName: "jsondiff",
-        images: [{
-            url: "https://jsondiff.in/assets/images/blogs/what-does-json-stand-for.png",
-        }],
-    }
-};
 
 const DynamicBlogComponent = () => {
     return <>
