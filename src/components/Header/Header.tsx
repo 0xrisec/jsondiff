@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="app-header">
             <Link href="/" passHref className="logo" aria-label="Go to homepage">
-                <h1 className="title">JSON <span className="diff">Diff</span></h1>
+                <div className="title">JSON <span className="diff">Diff</span></div>
                 <span className="tag-line">Client-Side Comparison</span>
             </Link>
             <div className='icons'>

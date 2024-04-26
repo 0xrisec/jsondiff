@@ -31,7 +31,7 @@
     },
     {
       "two": 2,
-      "title": "How to Display JSON Data in HTML: A Comprehensive Guide",
+      "title": "How to Display JSON Data in HTML",
       "date": "2024-04-25",
       "url": "/blog/how-to-display-json-data-in-html",
       "slug": {
@@ -40,7 +40,7 @@
       },
       "metadata": {
         "title": "JSON Diff | How to Display JSON Data in HTML: A Comprehensive Guide",
-        "description": "Explore the step-by-step guide on integrating JSON data into HTML for dynamic web experiences. Learn best practices and techniques for effective JSON data display.",
+        "description": "Explore the step-by-step guide on integrating JSON data into HTML for dynamic web experiences.",
         "authors": [{ "name": "0xrisec", "url": "https://www.linkedin.com/in/0xrisec/" }],
         "applicationName": "jsondiff",
         "generator": "jsondiff",
@@ -54,7 +54,7 @@
           "siteName": "jsondiff",
           "images": [
             {
-              "url": "https://jsondiff.in/_next/image?url=%2Fassets%2Fimages%2Fblogs%2Fdisplay-json-in-html.png&w=640&q=75"
+              "url": "https://jsondiff.in/_next/image?url=%2Fassets%2Fimages%2Fblogs%2Fjson-html-guide.png&w=640&q=75"
             }
           ]
         }
