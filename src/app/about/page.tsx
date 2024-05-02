@@ -99,7 +99,7 @@ export default function About() {
                                     <span aria-label="Video description compare.mp4" className="m-1">JSON fix Example</span>
                                     <span className="dropdown-caret"></span>
                                 </summary>
-                                <video className={styles["comparesion-video"]} src="/assets/videos/dirty-json-comparision.mp4" data-canonical-src="/assets/videos/compare.mp4" controls={true} muted={true}>
+                                <video className={styles["comparesion-video"]} src="/assets/videos/dirty-json-comparison.mp4" data-canonical-src="/assets/videos/compare.mp4" controls={true} muted={true}>
                                 </video>
                             </details>
                             <p>Here&apos;s what the JSONdiff fix feature can do for you:</p>

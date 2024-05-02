@@ -1,6 +1,4 @@
 User-agent: *
-Allow: /about
-Allow: /blog
-Allow: /blog?id=1
+Allow: /
 
 Sitemap: https://www.jsondiff.in/sitemap.xml

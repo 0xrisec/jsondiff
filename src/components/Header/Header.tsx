@@ -8,7 +8,7 @@ const Header = () => {
         <header className="app-header">
             <Link href="/" passHref className="logo" aria-label="Go to homepage">
                 <div className="title">JSON <span className="diff">Diff</span></div>
-                <span className="tag-line">Client-Side Comparison</span>
+                <span className="tag-line">A JSON Comparison Tool</span>
             </Link>
             <div className='icons'>
                 <Link href="https://github.com/0xrisec/jsondiff" className="anchor-github" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub">
@@ -18,7 +18,7 @@ const Header = () => {
                     <Image src='/assets/images/blog.png' width = {30} height = {30} className="about" alt="About" />
                 </Link>
                 <Link href="/about" passHref className="anchor-info" aria-label="Learn more about us">
-                    <Image src='/assets/images/info.png' width = {30} height = {30} className="about" alt="About" />
+                    <Image src='/assets/images/info.png' width = {30} height = {30} className="info" alt="Information" />
                 </Link>
             </div>
         </header>

@@ -4,12 +4,12 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: 'JSON Diff | JSON Compare tool',
-  description: 'Validate, format, and compare JSON data with JSON Diff.',
+  description: 'Validate, format, and compare JSON data with JSON Diff. Visually compare JSON objects, format them for readability, and fix errors in dirty JSON - all for free online. The ultimate JSON diff utility.',
   authors: [{ name: "0xrisec", url: "https://www.linkedin.com/in/0xrisec/" }],
   applicationName: 'jsondiff',
   generator: 'jsondiff',
-  keywords: "json diff, semantic json compare tool, json comparison tool, Format JSON, Compare JSON documents, Securely Compare JSON, JSON comparison",
-  robots: "json diff, json comparison",
+  keywords: "jsondiff, json compare, semantic json compare tool, json comparison tool, Format JSON, Compare JSON documents, Securely Compare JSON, JSON comparison",
+  robots: "jsondiff, json comparison",
   openGraph: {
     type: "website",
     url: "https://jsondiff.in/",
