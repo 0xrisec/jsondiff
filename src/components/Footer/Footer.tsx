@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
             <div className="mt-5">
-              <p className='px-4'>Compare, format, validate, and fix JSON data effortlessly with JSON Diff. Our tool operates entirely client-side using JavaScript, ensuring a secure and ad-free experience. Perfect for professional use, JSON Diff is the top choice for accurate JSON comparisons. It's open-source; you can check out the <a className="text-[#ff4469]" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub" href="https://github.com/0xrisec/jsondiff">Github</a> repository for more details.</p>
+              <p className='px-4'>Compare, format, validate, and fix JSON data effortlessly with JSON Diff. Our tool operates entirely client-side using JavaScript, ensuring a secure and ad-free experience. Perfect for professional use, JSON Diff is the top choice for accurate JSON comparisons. It&apos;s open-source; you can check out the <a className="text-[#ff4469]" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub" href="https://github.com/0xrisec/jsondiff">Github</a> repository for more details.</p>
               <p className='px-4'>Developed by <a href="https://www.linkedin.com/in/0xrisec/" rel="noopener noreferrer" target="_blank" className='text-[#ff4469]'>0xrisec</a></p>
             </div>
           </nav>

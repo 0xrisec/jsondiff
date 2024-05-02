@@ -35,7 +35,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ json, diffs, onDiffSelect, select
         <span className="json-content">{line}</span>
       </div>
     );
-  }), [jsonLines, diffs, selectedDiffs, isLeft, onDiffSelect]);
+  }), [jsonLines, isLeft, onDiffSelect, getDiffClass]);
 
   return (
     <div className="container">
