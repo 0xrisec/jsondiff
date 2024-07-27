@@ -6,8 +6,10 @@ import JsonUtilityService from '@/service/JsonUtilityService';
 import React, { useCallback, useEffect, useState } from 'react';
 import DiffViewer from '../DiffViewer/DiffViewer';
 import Footer from '../Footer/Footer';
+import Footer2 from '../Footer/Footer2';
 import Header from '../Header/Header';
 import { JsonInputForm } from '../JsonInputForm/JsonInputForm';
+import Details from '../Section/Details';
 import './Dashboard.css';
 
 const Dashboard: React.FC = () => {
@@ -125,8 +127,9 @@ const Dashboard: React.FC = () => {
           <JsonInputForm onCompare={handleCompare} oldLeftJson={leftFormattedJson} oldRightJson={rightFormattedJson} />
         )}
       </div>
-      {/* The <Footer /> was removed from the application as part of an optimization for SEO purposes */}
+      <Details />
       <Footer />
+      {/* <Footer2 /> */}
     </div>
   );
 };
