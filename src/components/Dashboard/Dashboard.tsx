@@ -3,7 +3,7 @@
 import { DiffResult } from '@/model';
 import JsonDiffService from '@/service/JsonDiffService';
 import JsonUtilityService from '@/service/JsonUtilityService';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import DiffViewer from '../DiffViewer/DiffViewer';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
@@ -45,6 +45,29 @@ const Dashboard: React.FC = () => {
     setDiffs([]);
   };
 
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const leftUrl = urlParams.get('left');
+    const rightUrl = urlParams.get('right');
+
+    if (leftUrl && rightUrl) {
+      Promise.all([fetch(leftUrl), fetch(rightUrl)])
+        .then(async ([leftResponse, rightResponse]) => {
+          if (!leftResponse.ok || !rightResponse.ok) {
+            throw new Error('Failed to fetch JSON files');
+          }
+          const leftJson = await leftResponse.json();
+          const rightJson = await rightResponse.json();
+          setLeftFormattedJson(JSON.stringify(leftJson, null, 2));
+          setRightFormattedJson(JSON.stringify(rightJson, null, 2));
+        })
+        .catch(error => {
+          console.error("Error fetching JSON files:", error);
+          alert("An error occurred while fetching the JSON files. Please check the console for more details.");
+        });
+    }
+  }, []);
+  
   // // Extract unique types of diffs
   // useEffect(() => {
   //   const uniqueTypes = new Set(diffs.map(diff => diff.type));

@@ -51,7 +51,7 @@
   color: rgba(173, 216, 230, 1);
 }
 
-.json-line.selected {
+.json-line.selected, .json-line.selected span {
   background-color: #e0e0e0;
   color: #000;
 }

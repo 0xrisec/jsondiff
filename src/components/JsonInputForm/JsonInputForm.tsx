@@ -1,5 +1,5 @@
 "use client"
-import React, { ChangeEvent, useCallback, useState } from 'react';
+import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import JsonUtilityService from '../../service/JsonUtilityService';
 import './JsonInputForm.css'
 import leftSampleJson from '../../../public/assets/left-sample.json';
@@ -39,6 +39,14 @@ export const JsonInputForm: React.FC<Props> = ({ onCompare, oldLeftJson, oldRigh
   //   }
   // };
 
+  useEffect(() => {
+    setLeftJson(oldLeftJson);
+  }, [oldLeftJson]);
+
+  useEffect(() => {
+    setRightJson(oldRightJson);
+  }, [oldRightJson]);
+  
   const loadSampleData = () => {
     setLeftJson(sampleLeftJson);
     setRightJson(sampleRightJson);
