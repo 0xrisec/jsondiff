@@ -74,7 +74,7 @@ const Details = () => {
                   </>
                 } 
                 secondary={
-                  <Typography variant="body2" sx={{ color: '#B0B0B0' }}>A: A JSON comparison tool allows you to compare two JSON data structures to identify differences and similarities. It's essential for debugging, data validation, and ensuring consistency between different data sources.</Typography>
+                  <Typography variant="body2" sx={{ color: '#B0B0B0' }}>A: A JSON comparison tool allows you to compare two JSON data structures to identify differences and similarities. It&apos;s essential for debugging, data validation, and ensuring consistency between different data sources.</Typography>
                 } 
                 sx={{ fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} 
               />
@@ -116,7 +116,7 @@ const Details = () => {
                   </>
                 } 
                 secondary={
-                  <Typography variant="body2" sx={{ color: '#B0B0B0' }}>A: Yes, your data is processed securely. We do not store or share your JSON data. It's a client-side comparison tool, ensuring your information remains private.</Typography>
+                  <Typography variant="body2" sx={{ color: '#B0B0B0' }}>A: Yes, your data is processed securely. We do not store or share your JSON data. It&apos;s a client-side comparison tool, ensuring your information remains private.</Typography>
                 } 
                 sx={{ fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} 
               />
