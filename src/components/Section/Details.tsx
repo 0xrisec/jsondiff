@@ -5,7 +5,7 @@ const Details = () => {
   return (
     <Container maxWidth="lg">
       <Box my={4}>
-        <Paper elevation={0} sx={{ padding: 4, backgroundColor: '#1C1F25' }}>
+        <Paper elevation={0} sx={{ padding: 4, paddingTop:14, backgroundColor: '#1C1F25' }}>
           <Typography variant="h3" component="h1" gutterBottom sx={{ color: '#FFFFFF', fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' } }}>
             How to Use Our Free Online JSON Comparison Tool
           </Typography>
@@ -17,10 +17,10 @@ const Details = () => {
               <ListItemText primary="1. Enter Your JSON Data: Copy and paste or fill in the input fields with the JSON data you want to compare. Place one dataset on the left side and the other on the right side." sx={{ color: '#B0B0B0', fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} />
             </ListItem>
             <ListItem>
-              <ListItemText primary="2. Click 'Compare': Hit the 'Compare' button to start the comparison process." sx={{ color: '#B0B0B0', fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} />
+              <ListItemText primary="2. Click &apos;Compare&apos;: Hit the &apos;Compare&apos; button to start the comparison process." sx={{ color: '#B0B0B0', fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} />
             </ListItem>
             <ListItem>
-              <ListItemText primary="3. Fix Incorrect JSON: If the JSON data is dirty or incorrect, a 'Fix JSON' button will appear. Click this button to automatically fix the JSON." sx={{ color: '#B0B0B0', fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} />
+              <ListItemText primary="3. Fix Incorrect JSON: If the JSON data is dirty or incorrect, a &apos;Fix JSON&apos; button will appear. Click this button to automatically fix the JSON." sx={{ color: '#B0B0B0', fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} />
             </ListItem>
             <List>
                 <ListItem>
