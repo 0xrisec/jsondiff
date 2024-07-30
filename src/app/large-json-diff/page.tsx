@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   }
 };
 
-import leftSampleJson from '../../../public/assets/left-sample.json';
-import rightSampleJson from '../../../public/assets/right-sample.json';
+import leftSampleJson from '../../../public/assets/large_left.json';
+import rightSampleJson from '../../../public/assets/large_right.json';
 
 export default function Example() {
   return (

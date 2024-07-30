@@ -13,8 +13,8 @@ import Details from '../Section/Details';
 import './Dashboard.css';
 
 interface Props {
-  oldLeftJson: string,
-  oldRightJson: string
+  oldLeftJson?: any,
+  oldRightJson?: any
 }
 
 const Dashboard: React.FC<Props> = ({ oldLeftJson, oldRightJson })  => {
