@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /large-json-diff
+Allow: /url-jsondiff-example?left=https://jsondiff.in/assets/left-sample.json&right=https://jsondiff.in/assets/left-sample.json
 
 Sitemap: https://www.jsondiff.in/sitemap.xml

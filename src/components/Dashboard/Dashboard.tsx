@@ -12,7 +12,12 @@ import { JsonInputForm } from '../JsonInputForm/JsonInputForm';
 import Details from '../Section/Details';
 import './Dashboard.css';
 
-const Dashboard: React.FC = () => {
+interface Props {
+  oldLeftJson: string,
+  oldRightJson: string
+}
+
+const Dashboard: React.FC<Props> = ({ oldLeftJson, oldRightJson })  => {
   // State to manage the visibility of DiffViewer and store formatted JSONs
   const [isComparisonValid, setIsComparisonValid] = useState(false);
   const [leftFormattedJson, setLeftFormattedJson] = useState('');
@@ -48,26 +53,31 @@ const Dashboard: React.FC = () => {
   };
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const leftUrl = urlParams.get('left');
-    const rightUrl = urlParams.get('right');
+    if(oldLeftJson && oldRightJson ) {
+      setLeftFormattedJson(JSON.stringify(oldLeftJson, null, 2));
+      setRightFormattedJson(JSON.stringify(oldRightJson, null, 2));
+    } else {
+        const urlParams = new URLSearchParams(window.location.search);
+        const leftUrl = urlParams.get('left');
+        const rightUrl = urlParams.get('right');
 
-    if (leftUrl && rightUrl) {
-      Promise.all([fetch(leftUrl), fetch(rightUrl)])
-        .then(async ([leftResponse, rightResponse]) => {
-          if (!leftResponse.ok || !rightResponse.ok) {
-            throw new Error('Failed to fetch JSON files');
-          }
-          const leftJson = await leftResponse.json();
-          const rightJson = await rightResponse.json();
-          setLeftFormattedJson(JSON.stringify(leftJson, null, 2));
-          setRightFormattedJson(JSON.stringify(rightJson, null, 2));
-        })
-        .catch(error => {
-          console.error("Error fetching JSON files:", error);
-          alert("An error occurred while fetching the JSON files. Please check the console for more details.");
-        });
-    }
+        if (leftUrl && rightUrl) {
+          Promise.all([fetch(leftUrl), fetch(rightUrl)])
+            .then(async ([leftResponse, rightResponse]) => {
+              if (!leftResponse.ok || !rightResponse.ok) {
+                throw new Error('Failed to fetch JSON files');
+              }
+              const leftJson = await leftResponse.json();
+              const rightJson = await rightResponse.json();
+              setLeftFormattedJson(JSON.stringify(leftJson, null, 2));
+              setRightFormattedJson(JSON.stringify(rightJson, null, 2));
+            })
+            .catch(error => {
+              console.error("Error fetching JSON files:", error);
+              alert("An error occurred while fetching the JSON files. Please check the console for more details.");
+            });
+        }
+      }
   }, []);
   
   // // Extract unique types of diffs
