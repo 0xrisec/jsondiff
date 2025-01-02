@@ -1,0 +1,52 @@
+.tooltip-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    background: linear-gradient(270deg, rgba(105, 245, 255, 1) 0%, rgba(255, 32, 78, 1) 50%, rgba(131, 58, 180, 1) 100%);
+    background-size: 600% 600%;
+    animation: Gradient 12s ease infinite;
+    max-width: 90%; /* Ensure the tooltip doesn't exceed the screen width */
+    box-sizing: border-box;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .tooltip-container {
+      top: 10px; 
+      padding: 8px; 
+      font-size: 14px; 
+    }
+  
+    .close-button {
+      font-size: 14px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tooltip-container {
+      top: 5px; 
+      padding: 6px; 
+      font-size: 12px; 
+    }
+  
+    .close-button {
+      font-size: 12px; 
+    }
+  }
+  

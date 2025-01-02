@@ -11,6 +11,7 @@ import Header from '../Header/Header';
 import { JsonInputForm } from '../JsonInputForm/JsonInputForm';
 import Details from '../Section/Details';
 import './Dashboard.css';
+import Tooltip from '../Tooltip/Tooltip'; 
 
 interface Props {
   oldLeftJson?: any,
@@ -105,6 +106,7 @@ const Dashboard: React.FC<Props> = ({ oldLeftJson, oldRightJson })  => {
   return (
     <div id="main" className="main-container">
       <Header />
+      <Tooltip message="🎉 Happy New Year 2025! 🎉" duration={5000} />
       <div className='body-container'>
         {isComparisonValid ? (
           <>
