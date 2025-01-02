@@ -106,7 +106,7 @@ const Dashboard: React.FC<Props> = ({ oldLeftJson, oldRightJson })  => {
   return (
     <div id="main" className="main-container">
       <Header />
-      <Tooltip message="🎉 Happy New Year 2025! 🎉" duration={5000} />
+      <Tooltip message="🎉 Happy New Year 2025! 🎉" duration={3000} />
       <div className='body-container'>
         {isComparisonValid ? (
           <>
