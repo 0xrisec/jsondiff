@@ -1,6 +1,6 @@
 "use client"
 import { DiffResult, TypeMessages } from '@/model';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import CodeBlock from '../CodeBlock/CodeBlock';
 import './DiffViewer.css'
 
@@ -15,6 +15,9 @@ const DiffViewer: React.FC<DiffViewerProps> = ({ leftJson, rightJson, diffs }) =
   const [selectedDiffs, setSelectedDiffs] = useState<DiffResult[]>([]);
   const [selectedTypes, setSelectedTypes] = useState<{ [key: string]: boolean }>({});
   const [diffCounts, setDiffCounts] = useState<{ [type: string]: number }>({});
+
+  const leftCodeBlockRef = useRef<HTMLDivElement>(null);
+  const rightCodeBlockRef = useRef<HTMLDivElement>(null);
 
   const highlightPrevDiff = () => changeDiff(-1);
   const highlightNextDiff = () => changeDiff(1);
@@ -37,12 +40,19 @@ const DiffViewer: React.FC<DiffViewerProps> = ({ leftJson, rightJson, diffs }) =
     }
   }, [diffs, onDiffSelect]);
 
+  const scrollToDiff = (lineNumber: number, isLeft: boolean) => {
+    const codeBlockRef = isLeft ? leftCodeBlockRef : rightCodeBlockRef;
+    const element = codeBlockRef.current?.querySelector(`[data-line-number="${lineNumber}"]`);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  };
+
   const changeDiff = (direction: number) => {
     const newIndex = currentDiffIndex + direction;
     if (newIndex >= 0 && newIndex < diffs.length) {
       setCurrentDiffIndex(newIndex);
-      onDiffSelect(diffs[newIndex].pathA.line, null);
-      //TODO: scrollToDiff implementation
+      const diff = diffs[newIndex];
+      onDiffSelect(diff.pathA.line, null);
+      scrollToDiff(diff.pathA.line, true); // Assuming you want to scroll the left side
     }
   };
 
@@ -109,7 +119,7 @@ const DiffViewer: React.FC<DiffViewerProps> = ({ leftJson, rightJson, diffs }) =
                     const parts = diff.msg.split(/<code>|<\/code>/).filter(part => part);
 
                     return (
-                      <div className="msg" key={index}>
+                      <div className="msg" key={index} onClick={() => scrollToDiff(diff.pathA.line, true)}>
                         {parts.map((part, partIndex) => {
                           const isCode = (partIndex % 2) === 1;
                           if (isCode) {
@@ -127,8 +137,12 @@ const DiffViewer: React.FC<DiffViewerProps> = ({ leftJson, rightJson, diffs }) =
           </div>
         }
         <div className="diffcontainer">
-          <CodeBlock json={leftJson} diffs={filteredDiffs} isLeft={true} onDiffSelect={onDiffSelect} selectedDiffs={selectedDiffs} />
-          <CodeBlock json={rightJson} diffs={filteredDiffs} onDiffSelect={onDiffSelect} selectedDiffs={selectedDiffs} />
+          <div ref={leftCodeBlockRef}>
+            <CodeBlock json={leftJson} diffs={filteredDiffs} isLeft={true} onDiffSelect={onDiffSelect} selectedDiffs={selectedDiffs} />
+          </div>
+          <div ref={rightCodeBlockRef}>
+            <CodeBlock json={rightJson} diffs={filteredDiffs} onDiffSelect={onDiffSelect} selectedDiffs={selectedDiffs} />
+          </div>
         </div>
       </div>
     </>

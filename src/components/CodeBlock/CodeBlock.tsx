@@ -24,14 +24,24 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ json, diffs, onDiffSelect, select
     return classes;
   };
 
+  const handleLineClick = (lineNumber: number, isLeft: boolean) => {
+    onDiffSelect(lineNumber, isLeft);
+    const element = document.querySelector(`[data-line-number="${lineNumber}"]`);
+    element?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  };
+
   const lineElements = useMemo(() => jsonLines.map((line, index) => {
     const lineNumber = index + 1;
     const diffClass = getDiffClass(lineNumber);
     const hasDiffClass = diffClass.trim().length > 0;
 
     return (
-      <div key={index} className={`json-line ${diffClass}`}
-        onClick={hasDiffClass ? () => onDiffSelect(lineNumber, !!isLeft) : undefined}>
+      <div
+        key={index}
+        className={`json-line ${diffClass}`}
+        data-line-number={lineNumber}
+        onClick={hasDiffClass ? () => handleLineClick(lineNumber, !!isLeft) : undefined}
+      >
         <span className="json-content">{line}</span>
       </div>
     );
