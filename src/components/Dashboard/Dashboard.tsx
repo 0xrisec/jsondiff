@@ -137,7 +137,7 @@ const Dashboard: React.FC<Props> = ({ oldLeftJson, oldRightJson })  => {
           <JsonInputForm onCompare={handleCompare} oldLeftJson={leftFormattedJson} oldRightJson={rightFormattedJson} />
         )}
       </div>
-      <Details />
+      { !isComparisonValid && <Details /> }
       <Footer />
       {/* <Footer2 /> */}
     </div>
