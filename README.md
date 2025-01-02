@@ -1,6 +1,6 @@
 # JSON Diff Tool🛠️
 
-Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes comparing two JSON data structures. This tool is designed to assist anyone who works with JSON data, providing a clear, intuitive, and ad-free interface for JSON comparison.
+Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes comparing two JSON data structures. This tool is designed to assist anyone who works with JSON data, providing a clear, intuitive.
 
 ## Table of Contents
 
@@ -20,8 +20,6 @@ Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes
 
 While there are existing solutions for JSON comparison, I believe there's room for improvement, especially for professional and enterprise-level work. Here's why this JSONDiff Tool stands out:
 
-- **Ad-Free Experience 🚫**: Other tools often display intrusive Google ads that can detract from a professional environment, especially during screen-sharing sessions. While we understand the necessity of funding, our tool uses non-intrusive promotions that won't compromise your professional image. Most other tools do not offer an ad-free experience and those that do often fail to provide clear and informative JSON difference messages. The UI has been designed to be simple and focused on delivering meaningful difference messages, avoiding the distraction of Google ads.
-
 - **Handles Dirty JSON 🧼**: JSONDiff Tool not only compares but also offers options to clean and fix these JSON structures before comparison. Encountering modified, encoded, or "dirty" JSON is common during development. Most tools lack this feature to fix JSON, setting our tool apart.  
 
 - **Privacy and Security 🔒**: Your JSON data is yours alone. Ensure that your data is never shared with anyone and that comparisons are done securely in your browser. Plus, our source code is open-source and deployed on GitHub Pages, allowing you to review the source code for complete transparency.
@@ -31,7 +29,6 @@ While there are existing solutions for JSON comparison, I believe there's room f
 - Validate JSON syntax effortlessly.
 - Format JSON for readability.
 - Compare two JSON documents side-by-side.
-- Ad-free, professional-grade tool.
 - Fix invalid JSON
 - Securely Compare JSON, Right in Your Browser, Open-source and transparent.
 

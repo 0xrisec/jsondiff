@@ -136,21 +136,6 @@ const Details = () => {
                 sx={{ fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} 
               />
             </ListItem>
-
-            <ListItem>
-              <ListItemText 
-                primary={
-                  <>
-                    <Typography variant="body1" component="span" sx={{ color: '#B0B0B0' }}>Q: </Typography>
-                    <Typography variant="body1" component="span" sx={{ color: '#B0B0B0' }}>Will our tool display Google ads?</Typography>
-                  </>
-                } 
-                secondary={
-                  <Typography variant="body2" sx={{ color: '#B0B0B0' }}>A: No, our tool does not display Google ads. Instead, we may include promotional banners to support the continued development and maintenance of the tool. Rest assured, we ensure that any promotional content does not include adult material or inappropriate ads.</Typography>
-                } 
-                sx={{ fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } }} 
-              />
-            </ListItem>
           </List>
         </Paper>
       </Box>
