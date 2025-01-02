@@ -48,15 +48,11 @@ export default function About() {
                 </div>
                 <div className={styles['content']}>
                     <p className={styles["paragraph"]}>
-                        Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes comparing two JSON data structures. This tool is designed to assist anyone who works with JSON data, providing a clear, intuitive, and ad-free interface for JSON comparison.
-                        Whether you&apos;re a developer, a data analyst, or just someone who frequently works with JSON, you&apos;re going to love the simplicity and efficiency JSONDiff brings to your workflow. And the best part? It&apos;s completely ad-free!
+                        Welcome to JSONDiff! 🎉 This is a modern, Next.js based application that makes comparing two JSON data structures. This tool is designed to assist anyone who works with JSON data, providing a clear, intuitive.
+                        Whether you&apos;re a developer, a data analyst, or just someone who frequently works with JSON, you&apos;re going to love the simplicity and efficiency JSONDiff brings to your workflow. 
                     </p>
                     <h3 className={styles["subtitle"]}>1. Why Choose this JSONDiff Tool Over Others? 🤔</h3>
                     <ul className={styles["unorder-list"]}>
-                        <li>
-                            <span className={styles["icon"]}>🚫</span>
-                            <strong className={styles["line-title"]}>Ad-Free Experience:</strong> Other tools often display intrusive Google ads that can detract from a professional environment, especially during screen-sharing sessions. While we understand the necessity of funding, our tool uses non-intrusive promotions that won&apos;t compromise your professional image. Most other tools do not offer an ad-free experience and those that do often fail to provide clear and informative JSON difference messages. The UI has been designed to be simple and focused on delivering meaningful difference messages, avoiding the distraction of Google ads.
-                        </li>
                         <li>
                             <span className={styles["icon"]}>🧼</span>
                             <strong className={styles["line-title"]}>Handles Dirty JSON:</strong> JSONDiff Tool not only compares but also offers options to clean and fix these JSON structures before comparison. Encountering modified, encoded, or &quot;dirty&quot; JSON is common during development. Most tools lack this feature to fix JSON, setting our tool apart.

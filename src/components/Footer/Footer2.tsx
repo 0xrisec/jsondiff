@@ -15,7 +15,7 @@ const Footer2: React.FC = () => {
                 <h1 className="logo">JSON Diff</h1>
             </Link>
             <Typography variant="body2" color="textSecondary" mt={3} sx={{ color: '#b0b0b0' }}>
-              <p>Compare, format, validate, and fix JSON data effortlessly with JSON Diff. Our tool operates entirely client-side using JavaScript, ensuring a secure and ad-free experience. Perfect for professional use, JSON Diff is the top choice for accurate JSON comparisons. It&apos;s open-source; you can check out the <a className="text-[#ff4469]" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub" href="https://github.com/0xrisec/jsondiff">Github</a> repository for more details.</p>
+              <p>Compare, format, validate, and fix JSON data effortlessly with JSON Diff. Our tool operates entirely client-side using JavaScript, ensuring a secure experience. Perfect for professional use, JSON Diff is the top choice for accurate JSON comparisons. It&apos;s open-source; you can check out the <a className="text-[#ff4469]" target="_blank" rel="noopener noreferrer" aria-label="View project on GitHub" href="https://github.com/0xrisec/jsondiff">Github</a> repository for more details.</p>
               <br>
               </br><p>Developed by <a href="https://www.linkedin.com/in/0xrisec/" rel="noopener noreferrer" target="_blank" className='text-[#ff4469]'>0xrisec</a></p>
             </Typography>
