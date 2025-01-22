@@ -137,10 +137,10 @@ const DiffViewer: React.FC<DiffViewerProps> = ({ leftJson, rightJson, diffs }) =
           </div>
         }
         <div className="diffcontainer">
-          <div ref={leftCodeBlockRef}>
+          <div ref={leftCodeBlockRef} className="code-block-container">
             <CodeBlock json={leftJson} diffs={filteredDiffs} isLeft={true} onDiffSelect={onDiffSelect} selectedDiffs={selectedDiffs} />
           </div>
-          <div ref={rightCodeBlockRef}>
+          <div ref={rightCodeBlockRef} className="code-block-container">
             <CodeBlock json={rightJson} diffs={filteredDiffs} onDiffSelect={onDiffSelect} selectedDiffs={selectedDiffs} />
           </div>
         </div>

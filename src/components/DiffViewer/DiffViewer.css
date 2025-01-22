@@ -112,6 +112,10 @@
     grid-gap: 10px;
 }
 
+.code-block-container {
+    overflow: auto;
+}
+
 @media screen and (max-width: 760px) {
 
     .diff-viewer {
