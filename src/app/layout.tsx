@@ -23,7 +23,7 @@ export default function RootLayout({
       {/* <head>
         <AdSense pId="7160351643450161"/>
       </head> */}
-      <Script type="text/javascript">
+      <Script type="text/javascript" id="microsoft-clarity">
         
         {
         `(function(c,l,a,r,i,t,y){
